@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background: turquoise;
+        }
+            h1 {color:black}
+
+          .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }  
+          .main-div{
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            box-shadow: 10rem black;
+            background-color: white;
+          }
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid black;  position :relative; width: 100%">
+        {{!-- <div class="header" style="padding:10px;">
+            {{message}}
+        </div> --}}
+        <div class="main-div" style="padding:30px;">
+            <h1 style="font-family: Verdana;">Hi, {{name}}</h1>
+            <br>
+            <a href={{message}} style="font-weight: 100; font-size: 16px ; font-family: Verdana; color: #1C1E3A; font-family: Verdana;" >click here to open url</p>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
