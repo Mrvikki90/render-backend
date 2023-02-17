@@ -46,6 +46,7 @@ if (process.env.NODE_ENV == "production") {
   });
 } else {
   app.get("/", (req, res) => {
+    res.setHeader("Access-Control-Allow-Credentials", "true");
     res.send("hello socket");
   });
 }
